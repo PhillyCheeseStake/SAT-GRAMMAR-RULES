@@ -95,7 +95,7 @@ nav {
 
 nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -103,16 +103,17 @@ nav ul {
 }
 
 nav li {
-    margin: 0 15px;
+    margin: 0 5px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    padding: 5px 10px;
+    padding: 8px 15px;
     border-radius: 4px;
     transition: background-color 0.3s;
+    font-size: 1.1rem;
 }
 
 nav a:hover {
@@ -135,6 +136,55 @@ footer {
     border: 1px solid #d0e3ff;
 }
 
+.difficulty-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.difficulty-selector label {
+    font-weight: 600;
+    color: var(--secondary);
+    font-size: 0.95rem;
+    margin-right: 5px;
+}
+
+.difficulty-dropdown {
+    padding: 0.5rem 0.75rem;
+    border: 2px solid var(--primary);
+    border-radius: 4px;
+    background-color: white;
+    color: var(--dark);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 100px;
+}
+
+.difficulty-dropdown:hover {
+    border-color: var(--accent);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.difficulty-dropdown:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(255, 126, 95, 0.2);
+}
+
+.difficulty-dropdown option {
+    padding: 0.5rem;
+    background-color: white;
+    color: var(--dark);
+}
+
 .practice-question {
     margin-bottom: 1.5rem;
     display: none;
@@ -145,40 +195,102 @@ footer {
 }
 
 .question-text {
-    font-weight: bold;
-    margin-bottom: 1rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--dark);
 }
 
 .options {
-    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 1.25rem 0;
 }
 
 .option {
     position: relative;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     cursor: pointer;
-    padding: 0.5rem 0.5rem 0.5rem 2rem;
-    border-radius: 4px;
+    padding: 0.75rem 1rem 0.75rem 3rem;
+    border-radius: 8px;
     transition: all 0.2s;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    font-size: 1rem;
 }
 
 .option:hover {
-    background-color: #e1ecf7;
+    background-color: #f0f7ff;
+    border-color: var(--primary);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .option.selected {
-    background-color: #d0e3ff;
+    background-color: #e1f0ff;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(74, 111, 165, 0.2);
+}
+
+.radio-check {
+    position: absolute;
+    top: 0.9rem;
+    left: 1rem;
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.option:hover .radio-check {
+    border-color: var(--primary);
+}
+
+.option.selected .radio-check {
+    border-color: var(--primary);
+    background-color: var(--primary);
+}
+
+.radio-check::after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background: white;
+}
+
+.option input:checked ~ .radio-check::after {
+    display: block;
 }
 
 .option.correct-answer {
-    background-color: #d4edda;
-    color: var(--correct);
-    font-weight: bold;
+    background-color: #e6f7ee;
+    border-color: var(--correct);
+    color: var(--dark);
+}
+
+.option.correct-answer .radio-check {
+    border-color: var(--correct);
+    background-color: var(--correct);
 }
 
 .option.incorrect-answer {
-    background-color: #f8d7da;
-    color: var(--incorrect);
+    background-color: #fce8e8;
+    border-color: var(--incorrect);
+    color: var(--dark);
+}
+
+.option.incorrect-answer .radio-check {
+    border-color: var(--incorrect);
+    background-color: var(--incorrect);
 }
 
 .explanation {
@@ -207,6 +319,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.2s;
+    font-weight: 500;
 }
 
 button:hover {
@@ -222,18 +335,29 @@ button:disabled {
     text-align: center;
     margin: 1rem 0;
     font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--secondary);
+    padding: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
 }
 
 .confirm-btn {
     margin-top: 1rem;
     display: none;
+    background-color: var(--accent);
+}
+
+.confirm-btn:hover {
+    background-color: #e66a4a;
 }
 
 /* Custom radio buttons */
 .radio-check {
     position: absolute;
     top: 0.7rem;
-    left: 0.5rem;
+    left: 1rem; 
     height: 1.2rem;
     width: 1.2rem;
     background-color: white;
@@ -289,4 +413,83 @@ button:disabled {
 .follow-github a {
     color: #0c5460;
     text-decoration: underline;
+}
+
+/* Responsive design improvements */
+@media (max-width: 768px) {
+    nav ul {
+        gap: 5px;
+    }
+    
+    nav a {
+        padding: 8px 10px;
+        font-size: 1rem;
+    }
+    
+    .group-header {
+        padding: 1.5rem;
+        margin: 2rem 0 1rem;
+    }
+    
+    .group-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .group-header p {
+        font-size: 1rem;
+    }
+}
+/* Enhanced visual feedback */
+.difficulty-dropdown[value="easy"] {
+    border-color: #28a745;
+}
+
+.difficulty-dropdown[value="medium"] {
+    border-color: #ffc107;
+}
+
+.difficulty-dropdown[value="hard"] {
+    border-color: #dc3545;
+}
+
+/* Loading state for questions */
+.practice-section.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.practice-section.loading::after {
+    content: "Loading questions...";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.group-header {
+    background-color: var(--secondary);
+    color: white;
+    padding: 2rem;
+    margin: 3rem 0 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.group-header h2 {
+    color: white;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.group-header p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    opacity: 0.9;
 }

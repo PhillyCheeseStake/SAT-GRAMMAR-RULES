@@ -1,426 +1,692 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head></head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7ZJ7GG2GD0"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7ZJ7GG2GD0');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAT Grammar Rules - Master the Essentials</title>
+    <title>SAT Grammar Rules & Practice</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>SAT Grammar Rules</h1>
-            <p>Master the 16 essential grammar rules for SAT success</p>
+            <h1>SAT Grammar Rules & Practice</h1>
+            <p>Master the 16 Essential Grammar Rules for SAT Success</p>
         </div>
     </header>
-    
+
     <nav>
-        <ul>
-            <li><a href="#punctuation">Punctuation</a></li>
-            <li><a href="#commas">Commas</a></li>
-            <li><a href="#apostrophes">Apostrophes</a></li>
-            <li><a href="#pronouns">Pronouns</a></li>
-            <li><a href="#verbs">Verbs</a></li>
-            <li><a href="#structure">Sentence Structure</a></li>
-        </ul>
+        <div class="container">
+            <ul>
+                <li><a href="#punctuation">Punctuation</a></li>
+                <li><a href="#commas">Commas</a></li>
+                <li><a href="#apostrophes">Apostrophes</a></li>
+                <li><a href="#pronouns">Pronouns</a></li>
+                <li><a href="#verbs-structure">Verbs & Structure</a></li>
+            </ul>
+        </div>
     </nav>
+
+    <main class="container">
+        <!-- Punctuation Section -->
+        <section id="punctuation" class="group-header">
+            <h2>Punctuation</h2>
+            <p>Master the rules for periods, semicolons, colons, dashes, and coordinating conjunctions.</p>
+        </section>
+
+        <!-- Rule 1: Periods and Semicolons -->
+        <section id="rule1" class="rule-card">
+            <h2><span class="rule-number">1</span>Periods and Semicolons</h2>
+            <h3>Rule:</h3>
+            <p>On the SAT and ACT, periods and semicolons are used interchangeably to separate two complete sentences.</p>
+            
+            <h3>Key Points:</h3>
+            <ul>
+                <li>Both periods and semicolons can separate two independent clauses</li>
+                <li>Semicolons can precede conjunctive adverbs (however, therefore, etc.)</li>
+                <li>Never use a semicolon before a coordinating conjunction (FANBOYS)</li>
+            </ul>
+
+            <div class="example">
+                <strong>Correct:</strong> The experiment was successful; the results were published.<br>
+                <strong>Correct:</strong> The experiment was successful. The results were published.<br>
+                <strong>Incorrect:</strong> The experiment was successful, the results were published. (comma splice)
+            </div>
+
+            <div class="practice-section">
+                <h3>Practice Questions</h3>
+                <div class="difficulty-selector">
+                    <label for="difficulty-1">Difficulty:</label>
+                    <select id="difficulty-1" class="difficulty-dropdown">
+                        <option value="easy">Easy</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div class="score-display">Score: <span id="score-1">0</span> / <span id="total-1">5</span></div>
+                <div id="practice-questions-1"></div>
+                <div class="navigation-buttons">
+                    <button id="prev-1">Previous</button>
+                    <button id="next-1">Next Question</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rule 2: Colons and Dashes -->
+        <section id="rule2" class="rule-card">
+            <h2><span class="rule-number">2</span>Colons and Dashes</h2>
+            <h3>Rule:</h3>
+            <p>Colons and dashes introduce lists and explanations. They must follow a complete sentence.</p>
+            
+            <h3>Key Points:</h3>
+            <ul>
+                <li>Must follow a complete independent clause</li>
+                <li>Can be followed by a list, explanation, or another complete sentence</li>
+                <li>Never use after a verb or preposition directly</li>
+            </ul>
+
+            <div class="example">
+                <strong>Correct:</strong> The recipe requires three ingredients: flour, sugar, and eggs.<br>
+                <strong>Correct:</strong> She had one goal—to win the championship.<br>
+                <strong>Incorrect:</strong> She bought: apples, bananas, and oranges.
+            </div>
+
+            <div class="practice-section">
+                <h3>Practice Questions</h3>
+                <div class="difficulty-selector">
+                    <label for="difficulty-2">Difficulty:</label>
+                    <select id="difficulty-2" class="difficulty-dropdown">
+                        <option value="easy">Easy</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div class="score-display">Score: <span id="score-2">0</span> / <span id="total-2">5</span></div>
+                <div id="practice-questions-2"></div>
+                <div class="navigation-buttons">
+                    <button id="prev-2">Previous</button>
+                    <button id="next-2">Next Question</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rule 3: FANBOYS -->
+        <section id="rule3" class="rule-card">
+            <h2><span class="rule-number">3</span>FANBOYS (Coordinating Conjunctions)</h2>
+            <h3>Rule:</h3>
+            <p>FANBOYS (For, And, Nor, But, Or, Yet, So) are coordinating conjunctions that join two independent clauses with a comma.</p>
+            
+            <h3>Key Points:</h3>
+            <ul>
+                <li>Use a comma before FANBOYS when joining two independent clauses</li>
+                <li>No comma needed when the second clause doesn't have a subject</li>
+                <li>FANBOYS = For, And, Nor, But, Or, Yet, So</li>
+            </ul>
+
+            <div class="example">
+                <strong>Correct:</strong> The experiment was successful, so the team celebrated.<br>
+                <strong>Correct:</strong> He wanted to go to college and pursue a degree. (no comma - implied subject)<br>
+                <strong>Incorrect:</strong> She studied all night, she still felt unprepared. (comma splice)
+            </div>
+
+            <div class="practice-section">
+                <h3>Practice Questions</h3>
+                <div class="difficulty-selector">
+                    <label for="difficulty-3">Difficulty:</label>
+                    <select id="difficulty-3" class="difficulty-dropdown">
+                        <option value="easy">Easy</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div class="score-display">Score: <span id="score-3">0</span> / <span id="total-3">5</span></div>
+                <div id="practice-questions-3"></div>
+                <div class="navigation-buttons">
+                    <button id="prev-3">Previous</button>
+                    <button id="next-3">Next Question</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Commas Section -->
+        <section id="commas" class="group-header">
+            <h2>Commas</h2>
+            <p>Learn proper comma usage with dependent clauses, transitions, and essential/non-essential information.</p>
+        </section>
+
+        <!-- Rule 4: Dependent Clauses -->
+        <section id="rule4" class="rule-card">
+            <h2><span class="rule-number">4</span>Dependent Clauses</h2>
+            <h3>Rule:</h3>
+            <p>When a dependent clause comes before an independent clause, use a comma. When it comes after, usually no comma is needed.</p>
+            
+            <h3>Key Points:</h3>
+            <ul>
+                <li>Dependent clause first = comma after it</li>
+                <li>Independent clause first = usually no comma</li>
+                <li>Common dependent clause starters: when, because, although, if, since</li>
+            </ul>
+
+            <div class="example">
+                <strong>Correct:</strong> When the bell rings, the students will leave.<br>
+                <strong>Correct:</strong> The students will leave when the bell rings.<br>
+                <strong>Incorrect:</strong> When the bell rings the students will leave. (missing comma)
+            </div>
+
+            <div class="practice-section">
+                <h3>Practice Questions</h3>
+                <div class="difficulty-selector">
+                    <label for="difficulty-4">Difficulty:</label>
+                    <select id="difficulty-4" class="difficulty-dropdown">
+                        <option value="easy">Easy</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div class="score-display">Score: <span id="score-4">0</span> / <span id="total-4">5</span></div>
+                <div id="practice-questions-4"></div>
+                <div class="navigation-buttons">
+                    <button id="prev-4">Previous</button>
+                    <button id="next-4">Next Question</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rule 5: Transitions -->
+        <section id="rule5" class="rule-card">
+            <h2><span class="rule-number">5</span>Transitions (Conjunctive Adverbs)</h2>
+            <h3>Rule:</h3>
+            <p>Transitions like however, therefore, furthermore connect ideas and require specific punctuation.</p>
+            
+            <h3>Key Points:</h3>
+            <ul>
+                <li>Use semicolon before and comma after when connecting sentences</li>
+                <li>Common transitions: however, therefore, furthermore, nevertheless, consequently</li>
+                <li>Choose transitions that match the logical relationship</li>
+            </ul>
+
+            <div class="example">
+                <strong>Correct:</strong> The experiment failed; however, we learned valuable information.<br>
+                <strong>Correct:</strong> The roads were icy; therefore, many accidents occurred.<br>
+                <strong>Incorrect:</strong> The experiment failed, however, we learned valuable information.
+            </div>
+
+            <div class="practice-section">
+                <h3>Practice Questions</h3>
+                <div class="difficulty-selector">
+                    <label for="difficulty-5">Difficulty:</label>
+                    <select id="difficulty-5" class="difficulty-dropdown">
+                        <option value="easy">Easy</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div class="score-display">Score: <span id="score-5">0</span> / <span id="total-5">5</span></div>
+                <div id="practice-questions-5"></div>
+                <div class="navigation-buttons">
+                    <button id="prev-5">Previous</button>
+                    <button id="next-5">Next Question</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rule 6: Non-Essential Information -->
+        <section id="rule6" class="rule-card">
+            <h2><span class="rule-number">6</span>Non-Essential Information</h2>
+            <h3>Rule:</h3>
+            <p>Non-essential information should be set off with matching punctuation: commas, dashes, or parentheses.</p>
+            
+            <h3>Key Points:</h3>
+            <ul>
+                <li>Use two commas, two dashes, or two parentheses</li>
+                <li>Never mix different types of punctuation</li>
+                <li>The sentence should make sense without the non-essential information</li>
+            </ul>
+
+            <div class="example">
+                <strong>Correct:</strong> Paris, which is in France, is beautiful.<br>
+                <strong>Correct:</strong> My brother—who lives abroad—is visiting.<br>
+                <strong>Incorrect:</strong> My brother, who lives abroad—is visiting. (mixed punctuation)
+            </div>
+
+            <div class="practice-section">
+                <h3>Practice Questions</h3>
+                <div class="difficulty-selector">
+                    <label for="difficulty-6">Difficulty:</label>
+                    <select id="difficulty-6" class="difficulty-dropdown">
+                        <option value="easy">Easy</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div class="score-display">Score: <span id="score-6">0</span> / <span id="total-6">5</span></div>
+                <div id="practice-questions-6"></div>
+                <div class="navigation-buttons">
+                    <button id="prev-6">Previous</button>
+                    <button id="next-6">Next Question</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rule 7: Essential vs. Non-Essential -->
+        <section id="rule7" class="rule-card">
+            <h2><span class="rule-number">7</span>Essential vs. Non-Essential</h2>
+            <h3>Rule:</h3>
+            <p>Essential information identifies which specific thing you're talking about. Non-essential information provides extra details.</p>
+            
+            <h3>Key Points:</h3>
+            <ul>
+                <li>Essential information: no commas</li>
+                <li>Non-essential information: use commas, dashes, or parentheses</li>
+                <li>Ask: "Do I need this information to identify what I'm talking about?"</li>
+            </ul>
+
+            <div class="example">
+                <strong>Essential:</strong> My friend Sarah is coming to dinner. (identifies which friend)<br>
+                <strong>Non-essential:</strong> My sister, who is a doctor, lives in Boston. (extra information)<br>
+                <strong>Context matters:</strong> The author Stephen King wrote many novels. (if context is clear)
+            </div>
+
+            <div class="practice-section">
+                <h3>Practice Questions</h3>
+                <div class="difficulty-selector">
+                    <label for="difficulty-7">Difficulty:</label>
+                    <select id="difficulty-7" class="difficulty-dropdown">
+                        <option value="easy">Easy</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div class="score-display">Score: <span id="score-7">0</span> / <span id="total-7">5</span></div>
+                <div id="practice-questions-7"></div>
+                <div class="navigation-buttons">
+                    <button id="prev-7">Previous</button>
+                    <button id="next-7">Next Question</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rule 8: Comma Rules -->
+        <section id="rule8" class="rule-card">
+            <h2><span class="rule-number">8</span>Comma Rules</h2>
+            <h3>Rule:</h3>
+            <p>Commas separate items in lists, coordinate adjectives, and set off introductory elements.</p>
+            
+            <h3>Key Points:</h3>
+            <ul>
+                <li>Use commas to separate items in a series</li>
+                <li>Use commas between coordinate adjectives</li>
+                <li>Never separate subject and verb with a comma</li>
+                <li>Use commas after introductory elements</li>
+            </ul>
+
+            <div class="example">
+                <strong>Correct:</strong> I need to buy apples, bananas, and oranges.<br>
+                <strong>Correct:</strong> The tall, dark stranger entered the room.<br>
+                <strong>Incorrect:</strong> The cat, jumped over the fence. (separates subject and verb)
+            </div>
+
+            <div class="practice-section">
+                <h3>Practice Questions</h3>
+                <div class="difficulty-selector">
+                    <label for="difficulty-8">Difficulty:</label>
+                    <select id="difficulty-8" class="difficulty-dropdown">
+                        <option value="easy">Easy</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div class="score-display">Score: <span id="score-8">0</span> / <span id="total-8">5</span></div>
+                <div id="practice-questions-8"></div>
+                <div class="navigation-buttons">
+                    <button id="prev-8">Previous</button>
+                    <button id="next-8">Next Question</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Apostrophes Section -->
+        <section id="apostrophes" class="group-header">
+            <h2>Apostrophes</h2>
+            <p>Understand possessive forms and contractions to avoid common errors.</p>
+        </section>
+
+        <!-- Rule 9: Apostrophes -->
+        <section id="rule9" class="rule-card">
+            <h2><span class="rule-number">9</span>Apostrophes</h2>
+            <h3>Rule:</h3>
+            <p>Apostrophes show possession and form contractions. Know the difference between its/it's, whose/who's, etc.</p>
+            
+            <h3>Key Points:</h3>
+            <ul>
+                <li>Possessive: add 's to singular nouns, ' to plural nouns ending in s</li>
+                <li>Contractions: it's = it is, who's = who is, they're = they are</li>
+                <li>Possessive pronouns (its, whose, theirs) don't use apostrophes</li>
+            </ul>
+
+            <div class="example">
+                <strong>Correct:</strong> The dog wagged its tail happily. (possessive pronoun)<br>
+                <strong>Correct:</strong> The children's toys were everywhere. (irregular plural)<br>
+                <strong>Incorrect:</strong> The dog wagged it's tail. (it's = it is)
+            </div>
+
+            <div class="practice-section">
+                <h3>Practice Questions</h3>
+                <div class="difficulty-selector">
+                    <label for="difficulty-9">Difficulty:</label>
+                    <select id="difficulty-9" class="difficulty-dropdown">
+                        <option value="easy">Easy</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div class="score-display">Score: <span id="score-9">0</span> / <span id="total-9">5</span></div>
+                <div id="practice-questions-9"></div>
+                <div class="navigation-buttons">
+                    <button id="prev-9">Previous</button>
+                    <button id="next-9">Next Question</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pronouns Section -->
+        <section id="pronouns" class="group-header">
+            <h2>Pronouns</h2>
+            <p>Master pronoun agreement and subject-verb agreement rules.</p>
+        </section>
+
+        <!-- Rule 10: Pronoun Agreement -->
+        <section id="rule10" class="rule-card">
+            <h2><span class="rule-number">10</span>Pronoun Agreement</h2>
+            <h3>Rule:</h3>
+            <p>Pronouns must agree with their antecedents in number and gender. Use who/whom correctly.</p>
+            
+            <h3>Key Points:</h3>
+            <ul>
+                <li>Singular antecedents take singular pronouns</li>
+                <li>Use "who" for subjects, "whom" for objects</li>
+                <li>Use "which" for things, "who" for people</li>
+                <li>Collective nouns are usually singular</li>
+            </ul>
+
+            <div class="example">
+                <strong>Correct:</strong> Each student must bring his or her own lunch.<br>
+                <strong>Correct:</strong> To whom did you give the assignment?<br>
+                <strong>Incorrect:</strong> Each student must bring their own lunch. (number disagreement)
+            </div>
+
+            <div class="practice-section">
+                <h3>Practice Questions</h3>
+                <div class="difficulty-selector">
+                    <label for="difficulty-10">Difficulty:</label>
+                    <select id="difficulty-10" class="difficulty-dropdown">
+                        <option value="easy">Easy</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div class="score-display">Score: <span id="score-10">0</span> / <span id="total-10">5</span></div>
+                <div id="practice-questions-10"></div>
+                <div class="navigation-buttons">
+                    <button id="prev-10">Previous</button>
+                    <button id="next-10">Next Question</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rule 11: Subject-Verb Agreement -->
+        <section id="rule11" class="rule-card">
+            <h2><span class="rule-number">11</span>Subject-Verb Agreement</h2>
+            <h3>Rule:</h3>
+            <p>Subjects and verbs must agree in number. Ignore prepositional phrases and focus on the true subject.</p>
+            
+            <h3>Key Points:</h3>
+            <ul>
+                <li>Singular subjects take singular verbs</li>
+                <li>Ignore prepositional phrases when finding the subject</li>
+                <li>Collective nouns are usually singular</li>
+                <li>With "neither...nor," verb agrees with the closer subject</li>
+            </ul>
+
+            <div class="example">
+                <strong>Correct:</strong> The group of students is studying for exams.<br>
+                <strong>Correct:</strong> Neither the teacher nor the students were ready.<br>
+                <strong>Incorrect:</strong> The group of students are studying. (group is singular)
+            </div>
+
+            <div class="practice-section">
+                <h3>Practice Questions</h3>
+                <div class="difficulty-selector">
+                    <label for="difficulty-11">Difficulty:</label>
+                    <select id="difficulty-11" class="difficulty-dropdown">
+                        <option value="easy">Easy</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div class="score-display">Score: <span id="score-11">0</span> / <span id="total-11">5</span></div>
+                <div id="practice-questions-11"></div>
+                <div class="navigation-buttons">
+                    <button id="prev-11">Previous</button>
+                    <button id="next-11">Next Question</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Verbs & Structure Section -->
+        <section id="verbs-structure" class="group-header">
+            <h2>Verbs & Sentence Structure</h2>
+            <p>Learn about verb tenses, parallel structure, modifiers, and adjective/adverb usage.</p>
+        </section>
+
+        <!-- Rule 12: Parallel Structure -->
+        <section id="rule12" class="rule-card">
+            <h2><span class="rule-number">12</span>Parallel Structure</h2>
+            <h3>Rule:</h3>
+            <p>Items in a series should be in the same grammatical form (all nouns, all verbs, all phrases, etc.).</p>
+            
+            <h3>Key Points:</h3>
+            <ul>
+                <li>Keep the same grammatical form in lists</li>
+                <li>All gerunds, all infinitives, or all base verbs</li>
+                <li>All nouns, all adjectives, or all phrases</li>
+                <li>Maintain consistency throughout the series</li>
+            </ul>
+
+            <div class="example">
+                <strong>Correct:</strong> She likes swimming, running, and biking. (all gerunds)<br>
+                <strong>Correct:</strong> She is intelligent, creative, and hardworking. (all adjectives)<br>
+                <strong>Incorrect:</strong> She likes swimming, running, and to bike. (mixed forms)
+            </div>
+
+            <div class="practice-section">
+                <h3>Practice Questions</h3>
+                <div class="difficulty-selector">
+                    <label for="difficulty-12">Difficulty:</label>
+                    <select id="difficulty-12" class="difficulty-dropdown">
+                        <option value="easy">Easy</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div class="score-display">Score: <span id="score-12">0</span> / <span id="total-12">5</span></div>
+                <div id="practice-questions-12"></div>
+                <div class="navigation-buttons">
+                    <button id="prev-12">Previous</button>
+                    <button id="next-12">Next Question</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rule 13: Dangling Modifiers -->
+        <section id="rule13" class="rule-card">
+            <h2><span class="rule-number">13</span>Dangling Modifiers</h2>
+            <h3>Rule:</h3>
+            <p>Modifying phrases must clearly refer to the subject that immediately follows them.</p>
+            
+            <h3>Key Points:</h3>
+            <ul>
+                <li>The subject after the comma must be doing the action in the modifier</li>
+                <li>Common problem: modifier seems to refer to the wrong noun</li>
+                <li>Fix by making the correct subject follow the modifier</li>
+            </ul>
+
+            <div class="example">
+                <strong>Correct:</strong> Walking to school, I got caught in the rain.<br>
+                <strong>Correct:</strong> After I studied all night, the exam was easy.<br>
+                <strong>Incorrect:</strong> Walking to school, the rain started falling. (rain wasn't walking)
+            </div>
+
+            <div class="practice-section">
+                <h3>Practice Questions</h3>
+                <div class="difficulty-selector">
+                    <label for="difficulty-13">Difficulty:</label>
+                    <select id="difficulty-13" class="difficulty-dropdown">
+                        <option value="easy">Easy</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div class="score-display">Score: <span id="score-13">0</span> / <span id="total-13">5</span></div>
+                <div id="practice-questions-13"></div>
+                <div class="navigation-buttons">
+                    <button id="prev-13">Previous</button>
+                    <button id="next-13">Next Question</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rule 14: Idioms -->
+        <section id="rule14" class="rule-card">
+            <h2><span class="rule-number">14</span>Idioms</h2>
+            <h3>Rule:</h3>
+            <p>Certain words require specific prepositions. These combinations must be memorized.</p>
+            
+            <h3>Key Points:</h3>
+            <ul>
+                <li>Good at, responsible for, different from, capable of</li>
+                <li>Talent for, interested in, worried about</li>
+                <li>These combinations are fixed and must be memorized</li>
+                <li>Context doesn't change the required preposition</li>
+            </ul>
+
+            <div class="example">
+                <strong>Correct:</strong> She is good at mathematics.<br>
+                <strong>Correct:</strong> He is responsible for the project.<br>
+                <strong>Incorrect:</strong> She is good in mathematics. (wrong preposition)
+            </div>
+
+            <div class="practice-section">
+                <h3>Practice Questions</h3>
+                <div class="difficulty-selector">
+                    <label for="difficulty-14">Difficulty:</label>
+                    <select id="difficulty-14" class="difficulty-dropdown">
+                        <option value="easy">Easy</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div class="score-display">Score: <span id="score-14">0</span> / <span id="total-14">5</span></div>
+                <div id="practice-questions-14"></div>
+                <div class="navigation-buttons">
+                    <button id="prev-14">Previous</button>
+                    <button id="next-14">Next Question</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rule 15: Verb Tenses -->
+        <section id="rule15" class="rule-card">
+            <h2><span class="rule-number">15</span>Verb Tenses</h2>
+            <h3>Rule:</h3>
+            <p>Maintain consistent verb tenses and use the correct tense to show the relationship between actions.</p>
+            
+            <h3>Key Points:</h3>
+            <ul>
+                <li>Keep tenses consistent within a sentence</li>
+                <li>Use past perfect for actions completed before other past actions</li>
+                <li>Use "would" instead of "will" in reported speech with past tense</li>
+                <li>Present perfect connects past to present</li>
+            </ul>
+
+            <div class="example">
+                <strong>Correct:</strong> She walked to the store and bought groceries. (both past)<br>
+                <strong>Correct:</strong> When I arrived, she had already left. (past perfect)<br>
+                <strong>Incorrect:</strong> She walked to the store and buys groceries. (mixed tenses)
+            </div>
+
+            <div class="practice-section">
+                <h3>Practice Questions</h3>
+                <div class="difficulty-selector">
+                    <label for="difficulty-15">Difficulty:</label>
+                    <select id="difficulty-15" class="difficulty-dropdown">
+                        <option value="easy">Easy</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div class="score-display">Score: <span id="score-15">0</span> / <span id="total-15">5</span></div>
+                <div id="practice-questions-15"></div>
+                <div class="navigation-buttons">
+                    <button id="prev-15">Previous</button>
+                    <button id="next-15">Next Question</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rule 16: Adjectives vs. Adverbs -->
+        <section id="rule16" class="rule-card">
+            <h2><span class="rule-number">16</span>Adjectives vs. Adverbs</h2>
+            <h3>Rule:</h3>
+            <p>Use adjectives to modify nouns and after linking verbs. Use adverbs to modify verbs, adjectives, and other adverbs.</p>
+            
+            <h3>Key Points:</h3>
+            <ul>
+                <li>Adjectives modify nouns and follow linking verbs</li>
+                <li>Adverbs modify verbs, adjectives, and other adverbs</li>
+                <li>Linking verbs: be, seem, appear, taste, feel, sound, look</li>
+                <li>Good/well, bad/badly are commonly confused</li>
+            </ul>
+
+            <div class="example">
+                <strong>Correct:</strong> She sings beautifully. (adverb modifies verb)<br>
+                <strong>Correct:</strong> The food tastes good. (adjective after linking verb)<br>
+                <strong>Incorrect:</strong> She sings beautiful. (adjective can't modify verb)
+            </div>
+
+            <div class="practice-section">
+                <h3>Practice Questions</h3>
+                <div class="difficulty-selector">
+                    <label for="difficulty-16">Difficulty:</label>
+                    <select id="difficulty-16" class="difficulty-dropdown">
+                        <option value="easy">Easy</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div class="score-display">Score: <span id="score-16">0</span> / <span id="total-16">5</span></div>
+                <div id="practice-questions-16"></div>
+                <div class="navigation-buttons">
+                    <button id="prev-16">Previous</button>
+                    <button id="next-16">Next Question</button>
+                </div>
+            </div>
+        </section>
+
         <div class="follow-github">
     🚀 Follow me on <a href="https://github.com/PhillyCheeseStake" target="_blank">GitHub</a> for more projects like this!
-    </div>
-
-    <div class="container">
-        <section id="punctuation">
-            <h2>Punctuation Rules</h2>
-            
-            <div class="rule-card">
-                <h3><span class="rule-number">1</span> Periods & Semicolons</h3>
-                <ul>
-                    <li>Periods and semicolons are used interchangeably on the SAT and ACT</li>
-                    <li>Both are used to separate two complete sentences</li>
-                    <li>They can precede conjunctive adverbs (e.g., <em>however, therefore</em>) at the start of a clause</li>
-                </ul>
-                <div class="example incorrect">
-                    <strong>Incorrect:</strong> "Barbara McClintock...1983, she won the award."
-                </div>
-                <div class="example correct">
-                    <strong>Correct:</strong> "Barbara McClintock...1983. She won the award."
-                </div>
-                
-                <div class="practice-section">
-                    <h4>Practice Questions</h4>
-                    <div class="score-display">Score: <span id="score-1">0</span>/5</div>
-                    <div id="practice-questions-1"></div>
-                    <div class="navigation-buttons">
-                        <button id="prev-1" disabled>Previous</button>
-                        <button id="next-1" disabled>Next Question</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="rule-card">
-                <h3><span class="rule-number">2</span> Colons & Dashes</h3>
-                <ul>
-                    <li>Colons and dashes introduce lists and explanations and are treated the same on tests</li>
-                    <li>They must follow a complete sentence that sets up the following information</li>
-                    <li>They can be followed by either a full sentence or a fragment</li>
-                </ul>
-                <div class="example incorrect">
-                    <strong>Incorrect:</strong> "London is home to a variety of: museums, castles, and shops."
-                </div>
-                <div class="example correct">
-                    <strong>Correct:</strong> "Visitors to London often spend their time in three main types of attractions: museums, castles, and shops."
-                </div>
-                
-                <div class="practice-section">
-                    <h4>Practice Questions</h4>
-                    <div class="score-display">Score: <span id="score-2">0</span>/5</div>
-                    <div id="practice-questions-2"></div>
-                    <div class="navigation-buttons">
-                        <button id="prev-2" disabled>Previous</button>
-                        <button id="next-2" disabled>Next Question</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="commas">
-            <h2>Comma Rules</h2>
-            
-            <div class="rule-card">
-                <h3><span class="rule-number">3</span> Comma + FANBOYS</h3>
-                <ul>
-                    <li>Comma + FANBOYS (for, and, nor, but, or, yet, so) is equivalent to a period or semicolon</li>
-                    <li>Common conjunctions: <strong>and</strong>, <strong>but</strong> (so and yet are less common; or and nor are rarely tested)</li>
-                    <li><strong>Comma splices</strong> are incorrect</li>
-                </ul>
-                <div class="example incorrect">
-                    <strong>Incorrect (comma splice):</strong> "London is a very old city, it has some modern parts."
-                </div>
-                <div class="example correct">
-                    <strong>Correct alternatives:</strong> Use a period or semicolon: "London is a very old city; it has some modern parts."
-                </div>
-                <div class="example correct">
-                    <strong>When subject is implied:</strong> "London is a very old city but has many modern buildings."
-                </div>
-                
-                <div class="practice-section">
-                    <h4>Practice Questions</h4>
-                    <div class="score-display">Score: <span id="score-3">0</span>/5</div>
-                    <div id="practice-questions-3"></div>
-                    <div class="navigation-buttons">
-                        <button id="prev-3" disabled>Previous</button>
-                        <button id="next-3" disabled>Next Question</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="rule-card">
-                <h3><span class="rule-number">4</span> Commas & Dependent Clauses</h3>
-                <ul>
-                    <li>Dependent clauses (fragments) cannot stand alone as complete sentences</li>
-                    <li>They begin with subordinating conjunctions (e.g., <em>although, because, when, until, while, since, before, after</em>)</li>
-                </ul>
-                <div class="example correct">
-                    <strong>Example:</strong> "Because London is a very old city, it has buildings from many different eras."
-                </div>
-                <div class="example correct">
-                    <strong>Rule:</strong> When a dependent clause precedes an independent clause, a comma must follow the dependent clause.
-                    <br>"Although London is a very old city, it has many modern buildings."
-                </div>
-                
-                <div class="practice-section">
-                    <h4>Practice Questions</h4>
-                    <div class="score-display">Score: <span id="score-4">0</span>/5</div>
-                    <div id="practice-questions-4"></div>
-                    <div class="navigation-buttons">
-                        <button id="prev-4" disabled>Previous</button>
-                        <button id="next-4" disabled>Next Question</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="rule-card">
-                <h3><span class="rule-number">5</span> Transitional Words & Phrases</h3>
-                <ul>
-                    <li><strong>Transitional words/phrases</strong> test meaning; the correct choice creates logical meaning.</li>
-                    <li>Types: <strong>Continuers</strong> (e.g., in addition, moreover), <strong>cause-and-effect</strong> (e.g., therefore, consequently), and <strong>contradictors</strong> (e.g., however, nevertheless).</li>
-                </ul>
-                <div class="example correct">
-                    <strong>Example:</strong> "The obvious reason for the construction of the Great Wall of China was protection. However, China had no powerful enemies when the Wall began to be built."
-                </div>
-                
-                <div class="practice-section">
-                    <h4>Practice Questions</h4>
-                    <div class="score-display">Score: <span id="score-5">0</span>/5</div>
-                    <div id="practice-questions-5"></div>
-                    <div class="navigation-buttons">
-                        <button id="prev-5" disabled>Previous</button>
-                        <button id="next-5" disabled>Next Question</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="rule-card">
-                <h3><span class="rule-number">6</span> Non-Essential Information</h3>
-                <ul>
-                    <li><strong>Non-essential information</strong> can be removed without affecting the sentence meaning.</li>
-                    <li><strong>Punctuated</strong> with 2 commas, 2 dashes, or 2 parentheses; mixed punctuation is incorrect.</li>
-                </ul>
-                <div class="example correct">
-                    <strong>Example with commas:</strong> "London, which is a very old city, has some extremely modern parts."
-                </div>
-                <div class="example correct">
-                    <strong>Dashes:</strong> "London—which is a very old city—has some modern parts."
-                </div>
-                <div class="example correct">
-                    <strong>Parentheses:</strong> "London (which is a very old city) has some modern parts."
-                </div>
-                
-                <div class="practice-section">
-                    <h4>Practice Questions</h4>
-                    <div class="score-display">Score: <span id="score-6">0</span>/5</div>
-                    <div id="practice-questions-6"></div>
-                    <div class="navigation-buttons">
-                        <button id="prev-6" disabled>Previous</button>
-                        <button id="next-6" disabled>Next Question</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="rule-card">
-                <h3><span class="rule-number">7</span> Commas with Names & Titles</h3>
-                <ul>
-                    <li>Use commas around names/titles only if they are non-essential.</li>
-                    <li><strong>Essential names/titles:</strong> no commas (e.g., "engineering professor Vikram Iyer").</li>
-                    <li><strong>Non-essential names/titles:</strong> two commas, one before and one after (e.g., "a University of Washington engineering professor, Vikram Iyer.").</li>
-                </ul>
-                <div class="example incorrect">
-                    <strong>Incorrect:</strong> A single comma before a name/title in the middle of a sentence.
-                </div>
-                
-                <div class="practice-section">
-                    <h4>Practice Questions</h4>
-                    <div class="score-display">Score: <span id="score-7">0</span>/5</div>
-                    <div id="practice-questions-7"></div>
-                    <div class="navigation-buttons">
-                        <button id="prev-7" disabled>Previous</button>
-                        <button id="next-7" disabled>Next Question</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="rule-card">
-                <h3><span class="rule-number">8</span> Additional Comma Uses & Misuses</h3>
-                <ul>
-                    <li>Use commas to separate items in a list (e.g., "boost metabolism, aid weight loss, and increase endurance").</li>
-                    <li>Use commas to separate adjectives whose order can be reversed (e.g., "active, warm-blooded animals").</li>
-                    <li>Do not use commas before or after prepositions (e.g., "artists of the twentieth century").</li>
-                    <li>Do not use commas between subjects and verbs (e.g., "The oldest surviving bridge in London is Richmond Bridge").</li>
-                    <li><strong>Do not use commas</strong> between <strong>compound items</strong> linked by "and" (e.g., "travel to London and Paris to visit museums and monuments").</li>
-                </ul>
-                
-                <div class="practice-section">
-                    <h4>Practice Questions</h4>
-                    <div class="score-display">Score: <span id="score-8">0</span>/5</div>
-                    <div id="practice-questions-8"></div>
-                    <div class="navigation-buttons">
-                        <button id="prev-8" disabled>Previous</button>
-                        <button id="next-8" disabled>Next Question</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="apostrophes">
-            <h2>Apostrophe Rules</h2>
-            
-            <div class="rule-card">
-                <h3><span class="rule-number">9</span> Apostrophes (Plural vs. Possessive)</h3>
-                <ul>
-                    <li><strong>Apostrophes</strong> indicate <strong>possession</strong>: add apostrophe + -s for <strong>singular nouns</strong> (e.g., "cell's DNA").</li>
-                    <li>For <strong>regular plural nouns</strong>, add -s or -es + apostrophe (e.g., "cells' DNA").</li>
-                    <li><strong>Irregular plural nouns</strong>: add apostrophe + -s (e.g., "people's responses").</li>
-                    <li><strong>Pronouns</strong>: possessive pronouns do not use apostrophes (e.g., "its" for possessive, "it's" for "it is").</li>
-                    <li>Differentiate between "they're" (they are), "their" (possessive), and "there" (place).</li>
-                    <li>"Who's" = "who is"; "whose" = possessive form of "who".</li>
-                </ul>
-                
-                <div class="practice-section">
-                    <h4>Practice Questions</h4>
-                    <div class="score-display">Score: <span id="score-9">0</span>/5</div>
-                    <div id="practice-questions-9"></div>
-                    <div class="navigation-buttons">
-                        <button id="prev-9" disabled>Previous</button>
-                        <button id="next-9" disabled>Next Question</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="pronouns">
-            <h2>Pronoun & Noun Rules</h2>
-            
-            <div class="rule-card">
-                <h3><span class="rule-number">10</span> Pronouns & Nouns</h3>
-                <ul>
-                    <li><strong>Pronouns</strong> replace nouns and must <strong>match in number</strong>: "he/she" for singular people, "it" for singular things, and "they" for plural.</li>
-                    <li>Ensure <strong>pronouns correctly refer</strong> to their antecedents even if the antecedent is not in the same sentence.</li>
-                    <li>Use "who" for people and "which" for things.</li>
-                    <li>Use "whom" correctly: before verbs is incorrect; after prepositions is correct.</li>
-                    <li><strong>Nouns</strong> must agree in number, e.g., use "examples" for multiple items, not "example."</li>
-                </ul>
-                
-                <div class="practice-section">
-                    <h4>Practice Questions</h4>
-                    <div class="score-display">Score: <span id="score-10">0</span>/5</div>
-                    <div id="practice-questions-10"></div>
-                    <div class="navigation-buttons">
-                        <button id="prev-10" disabled>Previous</button>
-                        <button id="next-10" disabled>Next Question</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="verbs">
-            <h2>Verb Rules</h2>
-            
-            <div class="rule-card">
-                <h3><span class="rule-number">11</span> Subject-Verb Agreement</h3>
-                <ul>
-                    <li><strong>Singular third-person verbs</strong> end in -s, while <strong>plural verbs</strong> do not.</li>
-                    <li><strong>Compound subjects</strong> connected by "and" require <strong>plural verbs</strong>.</li>
-                    <li><strong>Prepositional phrases</strong> and <strong>non-essential clauses</strong> between subjects and verbs <strong>do not change</strong> the verb's agreement.</li>
-                    <li><strong>Each</strong> and <strong>every</strong> are singular; <strong>collective nouns</strong> are treated as singular.</li>
-                    <li>Be aware of <strong>subject-verb agreement</strong> in <strong>complex sentences</strong> and <strong>passive voice</strong> constructions.</li>
-                </ul>
-                
-                <div class="practice-section">
-                    <h4>Practice Questions</h4>
-                    <div class="score-display">Score: <span id="score-11">0</span>/5</div>
-                    <div id="practice-questions-11"></div>
-                    <div class="navigation-buttons">
-                        <button id="prev-11" disabled>Previous</button>
-                        <button id="next-11" disabled>Next Question</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="rule-card">
-                <h3><span class="rule-number">12</span> Verb Tense</h3>
-                <ul>
-                    <li><strong>Maintain consistent verb tense</strong> throughout sentences and paragraphs.</li>
-                    <li>Use the <strong>present perfect</strong> ("has/have been") for actions that <strong>started in the past</strong> and <strong>continue to the present</strong>.</li>
-                    <li>Use the <strong>simple past</strong> ("published") for <strong>completed past actions</strong>.</li>
-                    <li>Use the <strong>past perfect</strong> ("had studied") for actions <strong>completed before another past action</strong>.</li>
-                    <li><strong>Passive voice</strong> should be used cautiously to avoid <strong>wordiness</strong> and <strong>awkwardness</strong>.</li>
-                </ul>
-                
-                <div class="practice-section">
-                    <h4>Practice Questions</h4>
-                    <div class="score-display">Score: <span id="score-12">0</span>/5</div>
-                    <div id="practice-questions-12"></div>
-                    <div class="navigation-buttons">
-                        <button id="prev-12" disabled>Previous</button>
-                        <button id="next-12" disabled>Next Question</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="structure">
-            <h2>Sentence Structure Rules</h2>
-            
-            <div class="rule-card">
-                <h3><span class="rule-number">13</span> Parallel Structure & Word Pairs</h3>
-                <ul>
-                    <li>Keep all items in a list parallel in structure (e.g., all nouns or all verbs).</li>
-                    <li>For lists with only two items joined by "and" or "but," ensure parallelism; repeat infinitives as needed.</li>
-                    <li>Certain word pairs must be used correctly and in parallel form (e.g., "either...or" and "not only...but also").</li>
-                    <li>Ensure the constructions following pairs match in structure.</li>
-                    <li>Maintain consistency in the use of word pairs and parallel structures throughout sentences.</li>
-                </ul>
-                
-                <div class="practice-section">
-                    <h4>Practice Questions</h4>
-                    <div class="score-display">Score: <span id="score-13">0</span>/5</div>
-                    <div id="practice-questions-13"></div>
-                    <div class="navigation-buttons">
-                        <button id="prev-13" disabled>Previous</button>
-                        <button id="next-13" disabled>Next Question</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="rule-card">
-                <h3><span class="rule-number">14</span> Dangling Modifiers</h3>
-                <ul>
-                    <li>Ensure the noun described by a modifier is immediately after the descriptive phrase to avoid dangling modifiers.</li>
-                    <li>A dangling modifier occurs when the descriptive phrase does not clearly modify the intended noun.</li>
-                </ul>
-                <div class="example incorrect">
-                    <strong>Example of a dangling modifier:</strong> "Born in Mexico City in 1907, self-portraits were what Frida Kahlo was best known for."
-                </div>
-                <div class="example correct">
-                    <strong>Corrected version:</strong> "Born in Mexico City in 1907, Frida Kahlo was best known for her self-portraits."
-                </div>
-                
-                <div class="practice-section">
-                    <h4>Practice Questions</h4>
-                    <div class="score-display">Score: <span id="score-14">0</span>/5</div>
-                    <div id="practice-questions-14"></div>
-                    <div class="navigation-buttons">
-                        <button id="prev-14" disabled>Previous</button>
-                        <button id="next-14" disabled>Next Question</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="rule-card">
-                <h3><span class="rule-number">15</span> Faulty Comparisons</h3>
-                <ul>
-                    <li>Comparisons must be made between equivalent items: people with people and things with things.</li>
-                    <li>Singular comparisons should compare the same type of singular items.</li>
-                    <li>Plural comparisons should compare the same type of plural items.</li>
-                    <li>Use "than" for comparisons, not "then."</li>
-                    <li>Modify plural nouns with "number," "many," "fewer," and singular nouns with "amount," "much," "less."</li>
-                </ul>
-                
-                <div class="practice-section">
-                    <h4>Practice Questions</h4>
-                    <div class="score-display">Score: <span id="score-15">0</span>/5</div>
-                    <div id="practice-questions-15"></div>
-                    <div class="navigation-buttons">
-                        <button id="prev-15" disabled>Previous</button>
-                        <button id="next-15" disabled>Next Question</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="rule-card">
-                <h3><span class="rule-number">16</span> Question Marks</h3>
-                <ul>
-                    <li>Use question marks only for direct questions, which are separate from the main sentence.</li>
-                </ul>
-                <div class="example correct">
-                    <strong>Example of correct usage:</strong> "Most of the experiments performed by cognitive psychologist Elizabeth Spelke have been designed to test one main question: how much do babies and young children understand about the world around them?"
-                </div>
-                <div class="example incorrect">
-                    <strong>Example of incorrect usage:</strong> "Most of the experiments performed by cognitive psychologist Elizabeth Spelke have been designed to test how much babies and young children understand about the world around them?"
-                </div>
-                
-                <div class="practice-section">
-                    <h4>Practice Questions</h4>
-                    <div class="score-display">Score: <span id="score-16">0</span>/5</div>
-                    <div id="practice-questions-16"></div>
-                    <div class="navigation-buttons">
-                        <button id="prev-16" disabled>Previous</button>
-                        <button id="next-16" disabled>Next Question</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+        </div>
+    </main>
 
     <footer>
         <div class="container">
