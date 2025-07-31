@@ -1,3 +1,1 @@
-# SAT-GRAMMAR-RULES
-Website with all 16 grammar rules for the SAT
-https://phillycheesestake.github.io/SAT-GRAMMAR-RULES/
+A few days ago, I was taking one of the blue book practice tests, and on the English section, as I was doing some grammar questions, I thought to myself, “Who could get this wrong”? Turns out, right after taking the practice test and getting my results back, I had gotten every one of those grammar questions that I thought were “easy” completely wrong. That is why I have created a website genuinely dedicated to helping myself and others (like you) master the grammar rules of the SATs you are on. I swore to myself that I would never get these types of questions wrong. On this website, there are 16 rules you will need to familiarize yourself with, and on each rule, there are practice questions to help you put what you just learned to use.
