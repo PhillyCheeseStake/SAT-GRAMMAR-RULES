@@ -1,1 +1,22 @@
-A few days ago, I was taking one of the blue book practice tests, and on the English section, as I was doing some grammar questions, I thought to myself, “Who could get this wrong”? Turns out, right after taking the practice test and getting my results back, I had gotten every one of those grammar questions that I thought were “easy” completely wrong. That is why I have created a website genuinely dedicated to helping myself and others (like you) master the grammar rules of the SATs you are on. I swore to myself that I would never get these types of questions wrong. On this website, there are 16 rules you will need to familiarize yourself with, and on each rule, there are practice questions to help you put what you just learned to use.
+### ⚡ My SAT Grammar Journey  
+
+**📖 "Who could get this wrong?"**  
+I thought, as I breezed through the Blue Book practice test's English section...  
+**💥 Reality check:** Got *every single one* of those "easy" grammar questions **WRONG!**  
+
+**🚀 Mission:** Never fail these again → Built this **[SAT Grammar Mastery Guide](https://yourwebsite.com)** with:  
+- **16 crucial rules** broken down  
+- **Practice questions** for each concept  
+- Designed to help **you** avoid my mistakes  
+
+✨ *Because sometimes the "easiest" questions trip us up the most!* ✨  
+
+---
+
+🔍 **Explore the rules:**  
+1️⃣ Periods & Semicolons  
+2️⃣ Colons & Dashes  
+3️⃣ FANBOYS  
+...and 13 more!  
+
+📈 **From failing → mastering SAT grammar!**  
