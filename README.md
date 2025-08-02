@@ -4,7 +4,7 @@
 I thought, as I breezed through the Blue Book practice test's English section...  
 **💥 Reality check:** Got *every single one* of those "easy" grammar questions **WRONG!**  
 
-**🚀 Mission:** Never fail these again → Built this **[SAT Grammar Mastery Guide](https://yourwebsite.com)** with:  
+**🚀 Mission:** Never fail these again → Built this **[SAT Grammar Mastery Guide](https://phillycheesestake.github.io/SAT-GRAMMAR-RULES/)** with:  
 - **16 crucial rules** broken down  
 - **Practice questions** for each concept  
 - Designed to help **you** avoid my mistakes  
