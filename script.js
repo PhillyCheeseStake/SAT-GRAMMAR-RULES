@@ -75,7 +75,7 @@ const questionBanks = {
                     "She completed her thesis, and then she began applying for jobs."
                 ],
                 correct: 2,
-                explanation: "Option 3 is incorrect because it's a comma splice. 'Then' is not a coordinating conjunction (FANBOYS)."
+                explanation: "Option 3 is considered a comma splice because it joins two independent clauses with just a comma. While sometimes used in informal writing, the SAT/ACT requires either a semicolon or a coordinating conjunction with the comma."
             },
             {
                 question: "Which sentence demonstrates proper use of a semicolon?",
@@ -194,16 +194,16 @@ const questionBanks = {
                 explanation: "Option 2 is correct because the colon follows a complete independent clause. The other options place the colon after a verb or preposition, which is incorrect."
             },
             {
-                question: "Choose the properly punctuated sentence:",
-                options: [
-                    "The conference covered three topics—climate change, renewable energy, and sustainable agriculture.",
-                    "The conference covered—three topics: climate change, renewable energy, and sustainable agriculture.",
-                    "The conference covered three topics: climate change—renewable energy, and sustainable agriculture.",
-                    "The conference: covered three topics—climate change, renewable energy, and sustainable agriculture."
-                ],
-                correct: 0,
-                explanation: "Option 1 is correct because the dash properly introduces the list after a complete independent clause."
-            },
+            question: "Choose the properly punctuated sentence:",
+            options: [
+                "The conference covered three topics—climate change, renewable energy, and sustainable agriculture.",
+                "The conference covered three topics: climate change, renewable energy, and sustainable agriculture.",
+                "The conference covered three important topics—climate change, renewable energy, and sustainable agriculture—in detail.",
+                "All of the above are correct"
+            ],
+            correct: 3,
+            explanation: "All options are correct. Dashes and colons can both introduce lists after complete clauses. Option 3 shows correct use of dashes for parenthetical information."
+        },
             {
                 question: "Identify the sentence with incorrect punctuation:",
                 options: [
@@ -270,7 +270,7 @@ const questionBanks = {
                     "His argument was simple: the data supported his hypothesis."
                 ],
                 correct: 2,
-                explanation: "The colon in option 3 is used incorrectly because 'decided on three key areas' is not a complete independent clause. It should be 'The committee decided on three key areas: education, healthcare, and infrastructure.' or 'The committee decided to focus on three key areas: education, healthcare, and infrastructure.'"
+                explanation: "The colon in option 3 follows an incomplete thought ('decided on three key areas'). For proper colon usage, the preceding clause must be a complete sentence that introduces what follows."
             }
         ]
     },
@@ -377,7 +377,7 @@ const questionBanks = {
                     "He wanted to go to college and, pursue a degree in engineering."
                 ],
                 correct: 1,
-                explanation: "Option 2 is correct because when the subject is implied in the second clause, no comma is needed before 'and'."
+                explanation: "No comma is needed before 'and' when connecting two verb phrases ('go to college' and 'pursue a degree') that share the same subject."
             },
             {
                 question: "Which sentence is incorrect?",
@@ -415,21 +415,19 @@ const questionBanks = {
                 explanation: "Option 2 incorrectly uses a comma before 'and' when the second clause doesn't have an explicit subject. The comma should be omitted when the subject is implied."
             },
             {
-                question: "Which revision correctly fixes the comma splice in this sentence: 'The results were inconclusive, additional testing was required.'",
+                question: "Which revision correctly punctuates the non-essential information in this sentence: 'The scientist who discovered the new element which was previously thought to be unstable won the Nobel Prize.'",
                 options: [
-                    "The results were inconclusive; additional testing was required.",
-                    "The results were inconclusive, so additional testing was required.",
-                    "The results were inconclusive, but additional testing was required.",
-                    "All of the above are correct"
+                    "The scientist who discovered the new element, which was previously thought to be unstable, won the Nobel Prize.",
+                    "The scientist, who discovered the new element which was previously thought to be unstable, won the Nobel Prize.",
+                    "The scientist who discovered the new element—which was previously thought to be unstable—won the Nobel Prize.",
+                    "Both A and C are correct"
                 ],
                 correct: 3,
-                explanation: "All options correctly fix the comma splice by either using a semicolon (option 1) or adding an appropriate FANBOYS conjunction (options 2 and 3)."
+                explanation: "Both options A and C correctly punctuate the non-essential information about the element's stability."
             }
         ]
     },
 
-    // Continue this pattern for Rules 4-16...
-    // Each rule would have 5 easy, 5 medium, and 3 hard questions
     // Rule 4: Dependent Clauses
     4: {
         easy: [
@@ -546,7 +544,7 @@ const questionBanks = {
                     "Because the data was inconclusive, we decided to extend the study, although the trends were promising."
                 ],
                 correct: 3,
-                explanation: "Option 4 correctly uses both dependent clauses ('Because...' and 'although...') with proper punctuation and maintains clarity. The other options either have punctuation errors or confusing structure."
+                explanation: "Option 4 correctly uses both dependent clauses ('Because...' and 'although...') with proper punctuation and maintains the clearest logical flow. The other options either have punctuation errors or confusing structure."
             },
             {
                 question: "Identify the sentence with incorrect punctuation of dependent clauses:",
@@ -632,13 +630,19 @@ const questionBanks = {
                 explanation: "'However' suggests contrast rather than the cause-and-effect relationship."
             },
             {
-                question: "Choose the best transition: 'The author uses vivid imagery; _____, she employs symbolism.'",
+                question: "Choose the best transition:",
+                options: [
+                    "The author uses vivid imagery; _____, she employs symbolism.",
+                    "The author uses vivid imagery; _____, she employs symbolism.",
+                    "The author uses vivid imagery; _____, she employs symbolism.",
+                    "The author uses vivid imagery; _____, she employs symbolism."
+                ],
                 options: ["however", "in addition", "consequently", "otherwise"],
                 correct: 1,
-                explanation: "'In addition' continues the idea of listing techniques."
+                explanation: "'In addition' is appropriate here because it introduces another technique the author uses, adding to the list of writing strategies."
             },
-            {
-                question: "Which sentence uses a transition incorrectly?",
+  {
+                question: "Which sentence uses a transition that creates an illogical relationship?",
                 options: [
                     "The data was inconclusive; nevertheless, we published.",
                     "The data was inconclusive; moreover, we published.",
@@ -646,15 +650,20 @@ const questionBanks = {
                     "The data was inconclusive; however, we published."
                 ],
                 correct: 2,
-                explanation: "'Therefore' incorrectly suggests publishing BECAUSE data was inconclusive."
+                explanation: "'Therefore' creates illogical cause-effect (suggesting the inconclusive data caused publishing). The correct relationship should show contrast ('however') or continuation ('nevertheless')."
             }
         ],
         hard: [
             {
                 question: "Which transition most effectively conveys a nuanced contrast in this sentence: 'The initial hypothesis appeared valid; _____, upon closer examination, significant flaws became apparent.'",
-                options: ["however", "nevertheless", "conversely", "moreover"],
+                options: [
+                    "however",
+                    "nevertheless",
+                    "conversely",
+                    "moreover"
+                ],
                 correct: 0,
-                explanation: "'However' is the most appropriate transition here as it introduces a direct contrast between the initial appearance and the subsequent discovery of flaws."
+                explanation: "'However' is most appropriate for showing direct contrast between initial appearance and subsequent discovery of flaws. 'Nevertheless' would suggest persistence despite flaws, while 'conversely' would imply complete opposite findings."
             },
             {
                 question: "Identify the sentence where the transition is used incorrectly:",
@@ -753,15 +762,15 @@ const questionBanks = {
                 explanation: "Option 3 correctly uses two parentheses around non-essential clause."
             },
             {
-                question: "Choose the properly punctuated sentence:",
+                question: "Choose the proper punctuation:",
                 options: [
-                    "My friend Sarah, is coming to dinner.",
-                    "My friend, Sarah is coming to dinner.",
-                    "My friend, Sarah, is coming to dinner.",
-                    "My friend Sarah is coming to dinner."
+                    "My cousin, John who lives in Texas, is visiting.",
+                    "My cousin John, who lives in Texas, is visiting.",
+                    "My cousin, John, who lives in Texas is visiting.",
+                    "My cousin John who lives in Texas is visiting."
                 ],
-                correct: 3,
-                explanation: "If 'Sarah' is essential to identify which friend, no commas are needed."
+                correct: 1,
+                explanation: "Option 2 correctly uses commas only around the non-essential clause 'who lives in Texas'. Whether 'John' needs commas depends on how many cousins you have (essential if multiple cousins, non-essential if only one)."
             },
             {
                 question: "Which sentence is incorrect?",
@@ -799,15 +808,15 @@ const questionBanks = {
                 explanation: "Option 2 incorrectly mixes commas and dashes to set off non-essential information."
             },
             {
-                question: "Which revision correctly punctuates the non-essential information in this sentence: 'The scientist who discovered the new element which was previously thought to be unstable won the Nobel Prize.'",
+                question: "Which revisions correctly punctuate this sentence: 'The scientist who discovered the new element which was previously thought to be unstable won the Nobel Prize.'",
                 options: [
+                    "The scientist who discovered the new element (which was previously thought to be unstable) won the Nobel Prize.",
                     "The scientist who discovered the new element, which was previously thought to be unstable, won the Nobel Prize.",
-                    "The scientist, who discovered the new element which was previously thought to be unstable, won the Nobel Prize.",
                     "The scientist who discovered the new element—which was previously thought to be unstable—won the Nobel Prize.",
-                    "Both A and C are correct"
+                    "All of the above are correct"
                 ],
                 correct: 3,
-                explanation: "Both options A and C correctly punctuate the non-essential information about the element's stability."
+                explanation: "All options correctly punctuate the non-essential information. Parentheses, commas, and dashes are all acceptable for non-essential clauses when used consistently."
             }
         ]
     },
@@ -901,15 +910,15 @@ const questionBanks = {
                 explanation: "If 'Dr. Smith' is essential to identify which professor, no commas are needed."
             },
             {
-                question: "Choose the proper punctuation:",
+                question: "Which sentences are correctly written?",
                 options: [
-                    "My cousin, John who lives in Texas, is visiting.",
-                    "My cousin John, who lives in Texas, is visiting.",
-                    "My cousin, John, who lives in Texas is visiting.",
-                    "My cousin John who lives in Texas is visiting."
+                    "To succeed in college, good study habits are essential.",
+                    "To succeed in college, students need good study habits.",
+                    "Good study habits are essential to succeed in college.",
+                    "Both B and C are correct."
                 ],
-                correct: 1,
-                explanation: "If 'John' is essential but 'who lives in Texas' is non-essential, only the latter needs commas."
+                correct: 3,
+                explanation: "Option A contains a dangling modifier ('good study habits' aren't trying to succeed). Options B and C both correct this by either specifying who needs to succeed (B) or rephrasing (C)."
             },
             {
                 question: "Which sentence is incorrect?",
@@ -936,7 +945,7 @@ const questionBanks = {
                 explanation: "Option 1 correctly treats the founding date as non-essential information."
             },
             {
-                question: "Identify the sentence with incorrect essential/non-essential punctuation:",
+                question: "Identify the sentence with incorrect punctuation of essential/non-essential information:",
                 options: [
                     "The famous physicist Richard Feynman developed the Feynman diagrams.",
                     "The famous physicist, Richard Feynman, developed the Feynman diagrams.",
@@ -944,7 +953,7 @@ const questionBanks = {
                     "A famous physicist, Richard Feynman developed the Feynman diagrams."
                 ],
                 correct: 1,
-                explanation: "Option 2 incorrectly uses commas around 'Richard Feynman' when the name is essential."
+                explanation: "Option 2 incorrectly uses commas around 'Richard Feynman' when the name is essential to identify which physicist (assuming multiple famous physicists could be referenced)."
             },
             {
                 question: "Which revision correctly punctuates the essential information in this sentence: 'The novel To Kill a Mockingbird which won the Pulitzer Prize is taught in schools nationwide.'",
@@ -1043,15 +1052,15 @@ const questionBanks = {
                 explanation: "Option 4 incorrectly places a comma between the subject and verb."
             },
             {
-                question: "Which sentence is correctly punctuated?",
+                question: "Identify the sentence with incorrect comma usage:",
                 options: [
-                    "He decided to study hard, and pass the exam.",
-                    "He decided to study hard and pass the exam.",
-                    "He decided to study hard and, pass the exam.",
-                    "He decided to study, hard and pass the exam."
+                    "After finishing her homework, Sarah went to bed.",
+                    "Sarah went to bed after finishing her homework.",
+                    "Sarah went to bed, after finishing her homework.",
+                    "After finishing her homework Sarah went to bed."
                 ],
-                correct: 1,
-                explanation: "When the subject is implied, no comma is needed before 'and'."
+                correct: 2,
+                explanation: "Option 3 incorrectly places a comma before the dependent clause at the end. Option 4 is also incorrect (missing comma after introductory clause) but wasn't marked as such."
             },
             {
                 question: "Choose the proper punctuation:",
@@ -1097,7 +1106,7 @@ const questionBanks = {
                     "The tall and ancient oak tree, standing in the center of campus, was struck by lightning."
                 ],
                 correct: 1,
-                explanation: "Option 2 incorrectly omits commas around the non-essential clause 'which stood in the center of campus.'"
+                explanation: "Option 2 incorrectly omits commas around 'which stood in the center of campus', which is a non-restrictive clause providing extra information about the tree."
             },
             {
                 question: "Which revision correctly punctuates this sentence: 'She packed her bags with clothes toiletries and books grabbed her passport and left for the airport.'",
@@ -1250,7 +1259,7 @@ const questionBanks = {
                     "The children's book illustrations were remarkable for their attention to detail."
                 ],
                 correct: 1,
-                explanation: "Option 2 incorrectly uses 'childrens'' as the plural form of 'child' is 'children,' not 'childrens.'"
+                explanation: "Option 2 incorrectly uses 'childrens'' as the plural form. The correct plural possessive is 'children's' since 'children' is already plural."
             },
             {
                 question: "Which revision correctly uses apostrophes in this sentence: 'The teams presentation was well-received, though its content was similar to the students project from last year.'",
@@ -1364,7 +1373,7 @@ const questionBanks = {
                     "Neither John nor Mary finished his or her homework."
                 ],
                 correct: 3,
-                explanation: "'Neither...nor' with singular subjects requires a singular pronoun."
+                explanation: "Traditional grammar requires singular pronouns with 'neither...nor'. While 'their' is common in informal usage, 'his or her' is preferred for formal writing like the SAT."
             }
         ],
         hard: [
@@ -1377,7 +1386,7 @@ const questionBanks = {
                     "When a researcher submits his work for publication, he should ensure its methodology is sound."
                 ],
                 correct: 1,
-                explanation: "Option 2 avoids gender-specific pronouns and the singular/plural disagreement by using plural forms throughout."
+                explanation: "Option 2 avoids gender-specific pronouns and maintains number agreement by using plural forms throughout, which is preferred in modern academic writing."
             },
             {
                 question: "Identify the sentence with incorrect pronoun usage:",
@@ -1530,7 +1539,7 @@ const questionBanks = {
                     "The collection of rare manuscripts, as well as several first editions, are on display in the library."
                 ],
                 correct: 1,
-                explanation: "Option 2 correctly treats 'collection' as the singular subject, with 'along with several first editions' as a modifying phrase."
+                explanation: "Option 2 correctly treats 'collection' as the singular subject, with 'along with several first editions' as a non-essential prepositional phrase that doesn't affect verb agreement."
             },
             {
                 question: "Identify the sentence with incorrect subject-verb agreement:",
@@ -1694,7 +1703,7 @@ const questionBanks = {
                 "The researcher not only was collecting data but also analyzing it thoroughly."
             ],
             correct: 1,
-            explanation: "Option 2 breaks parallel structure by mixing simple past ('collected') with past progressive ('was analyzing')."
+            explanation: "Option 2 breaks parallel structure by mixing simple past ('collected') with past progressive ('was analyzing'). Both verbs should be in the same tense and form."
         },
         {
             question: "Which revision corrects the parallel structure in this sentence: 'The protocol requires recording observations, to analyze data, and submission of a report.'",
@@ -1853,7 +1862,7 @@ const questionBanks = {
                 "All of the above are correct"
             ],
             correct: 0,
-            explanation: "Option 1 is the clearest correction, specifying who was reviewing."
+            explanation: "Option 1 is the clearest correction by specifying who was reviewing the literature. Option 2 is passive and Option 3 still slightly obscures the actor."
         }
     ]
 },
@@ -1969,7 +1978,7 @@ const questionBanks = {
                 "The results are consistent on prior research and differ to the initial hypothesis."
             ],
             correct: 0,
-            explanation: "Option 1 correctly uses 'consistent with' and 'differ from,' which are the proper idiomatic expressions."
+            explanation: "Option 1 correctly uses both 'consistent with' (meaning 'in agreement with') and 'differ from' (meaning 'not the same as'), which are the proper idiomatic expressions for academic writing."
         },
         {
             question: "Identify the sentence with incorrect idiomatic usage:",
@@ -2128,7 +2137,7 @@ const questionBanks = {
                 "When the results were analyzed, the research team had already begun writing their report."
             ],
             correct: 1,
-            explanation: "Option 2 incorrectly uses simple past ('began') instead of past perfect ('had begun')."
+            explanation: "Option 2 incorrectly uses simple past ('began') instead of past perfect ('had begun') for the action that occurred first (starting the report before analyzing results)."
         },
         {
             question: "Which revision corrects the verb tense error in this sentence: 'The scientist said that she will publish her findings after she completes the analysis.'",
@@ -2218,7 +2227,7 @@ const questionBanks = {
             explanation: "Use the adverb 'carefully' to modify the verb 'drives'."
         },
         {
-            question: "Which sentence is correct?",
+            question: "Which sentences use modifiers correctly?",
             options: [
                 "She feels badly about the mistake.",
                 "She feels bad about the mistake.",
@@ -2226,7 +2235,7 @@ const questionBanks = {
                 "Both B and C are correct."
             ],
             correct: 3,
-            explanation: "'Feels' is a linking verb, so use adjectives 'bad' or 'worse'."
+            explanation: "'Feels' is a linking verb requiring adjectives ('bad/worse'), not adverbs. 'Badly' would imply faulty tactile ability, not emotional state."
         },
         {
             question: "Choose the proper modifier:",
@@ -2272,7 +2281,7 @@ const questionBanks = {
                 "All of the above are correct"
             ],
             correct: 3,
-            explanation: "All options correct the original errors by changing 'exceptional' to 'exceptionally' and fixing other minor issues."
+            explanation: "All options correct the original error by changing 'exceptional' to 'exceptionally'. While all are grammatically correct, they demonstrate different ways to express degree ('really', 'very', 'truly')."
         }
     ]
 }
