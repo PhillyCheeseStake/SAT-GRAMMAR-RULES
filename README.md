@@ -20,3 +20,5 @@ I thought, as I breezed through the Blue Book practice test's English section...
 ...and 13 more!  
 
 📈 **From failing → mastering SAT grammar!**  
+
+(this is ai generated im too lazy to write the full story)
