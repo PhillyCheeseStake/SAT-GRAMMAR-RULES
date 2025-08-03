@@ -1,3 +1,6 @@
+(this bio is ai generated im too lazy to write the full story)
+
+
 ### ⚡ My SAT Grammar Journey  
 
 **📖 "Who could get this wrong?"**  
@@ -21,4 +24,3 @@ I thought, as I breezed through the Blue Book practice test's English section...
 
 📈 **From failing → mastering SAT grammar!**  
 
-(this bio is ai generated im too lazy to write the full story)
