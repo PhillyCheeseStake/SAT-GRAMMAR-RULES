@@ -21,4 +21,4 @@ I thought, as I breezed through the Blue Book practice test's English section...
 
 📈 **From failing → mastering SAT grammar!**  
 
-(this is ai generated im too lazy to write the full story)
+(this bio is ai generated im too lazy to write the full story)
