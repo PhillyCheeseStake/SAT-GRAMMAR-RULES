@@ -6,13 +6,13 @@ const questionBanks = {
                 question: "Which punctuation mark is used to separate two complete sentences?",
                 options: ["Comma", "Period", "Question Mark", "Exclamation Mark"],
                 correct: 1,
-                explanation: "Both periods and semicolons are used to separate two complete sentences."
+                explanation: "Periods and semicolons can both separate independent clauses. Use a semicolon when the clauses are closely related, or a period when they're more distinct."
             },
             {
                 question: "True or False: A semicolon can be used in the same way as a period to separate two independent clauses.",
                 options: ["True", "False"],
                 correct: 0,
-                explanation: "On the SAT and ACT, periods and semicolons are used interchangeably to separate two complete sentences."
+                explanation: "True. Semicolons and periods can both separate independent clauses, but semicolons suggest a closer relationship between the clauses."
             },
             {
                 question: "Which of these can come after a semicolon at the start of a clause?",
@@ -23,13 +23,13 @@ const questionBanks = {
                     "A prepositional phrase"
                 ],
                 correct: 2,
-                explanation: "Semicolons can precede conjunctive adverbs (e.g., however, therefore) at the start of a clause."
+                explanation: "Semicolons can precede conjunctive adverbs (e.g., however, therefore) at the start of a clause when connecting two independent clauses."
             },
             {
                 question: "Identify the correct sentence: 'The dog barked loudly; the cat ran away.'",
                 options: ["Correct", "Incorrect"],
                 correct: 0,
-                explanation: "The sentence is correct because the semicolon properly separates two independent clauses."
+                explanation: "The sentence is correct because the semicolon properly separates two independent clauses that are closely related."
             },
             {
                 question: "Which sentence is punctuated correctly?",
@@ -40,7 +40,7 @@ const questionBanks = {
                     "Both B and C"
                 ],
                 correct: 3,
-                explanation: "Both periods and semicolons can separate two complete sentences. Option A is a comma splice."
+                explanation: "Both periods and semicolons can properly separate two complete sentences. Option A is a comma splice, which is incorrect."
             }
         ],
         medium: [
@@ -298,7 +298,7 @@ const questionBanks = {
                     "Only with 'and' and 'but'"
                 ],
                 correct: 1,
-                explanation: "Use a comma with FANBOYS when connecting two independent clauses (complete sentences)."
+                explanation: "Use a comma with FANBOYS only when connecting two independent clauses (complete sentences). No comma is needed for simple lists or compound predicates."
             },
             {
                 question: "Which sentence correctly uses a comma with FANBOYS?",
@@ -686,17 +686,17 @@ const questionBanks = {
     },
 6: {
         easy: [
-            {
+             {
                 question: "Which punctuation is used to set off non-essential information?",
                 options: ["Periods", "Commas", "Question marks", "All of the above"],
                 correct: 1,
-                explanation: "Non-essential information is set off with commas, dashes, or parentheses."
+                explanation: "Non-essential information is set off with matching punctuation (two commas, two dashes, or two parentheses). The sentence's core meaning should remain clear without this information."
             },
             {
                 question: "True or False: Non-essential information can be removed without changing the sentence's core meaning.",
                 options: ["True", "False"],
                 correct: 0,
-                explanation: "Non-essential information provides extra details but isn't necessary for the main meaning."
+                explanation: "True. Non-essential information provides extra details but isn't necessary for the main meaning. However, some descriptive details may be lost."
             },
             {
                 question: "Which sentence correctly uses commas for non-essential information?",
@@ -713,7 +713,7 @@ const questionBanks = {
                 question: "What punctuation can replace commas for non-essential information?",
                 options: ["Periods", "Dashes", "Colons", "Semicolons"],
                 correct: 1,
-                explanation: "Dashes and parentheses can also set off non-essential information."
+                explanation: "Dashes and parentheses can also set off non-essential information, but they must be used in matching pairs."
             },
             {
                 question: "Which is NOT correct for non-essential information?",
@@ -833,7 +833,7 @@ const questionBanks = {
                     "Unnecessary details"
                 ],
                 correct: 1,
-                explanation: "Essential information identifies which specific thing you're talking about."
+                explanation: "Essential information identifies which specific thing you're talking about. For example: 'The book that won the Pulitzer Prize is on the table' (essential) vs. 'My copy of Moby Dick, which won awards, is on the table' (non-essential)."
             },
             {
                 question: "How is essential information punctuated?",
@@ -844,7 +844,7 @@ const questionBanks = {
                     "With parentheses"
                 ],
                 correct: 2,
-                explanation: "Essential information doesn't use extra punctuation."
+                explanation: "Essential information doesn't use extra punctuation because it's necessary to identify the noun."
             },
             {
                 question: "Which sentence uses essential information correctly?",
@@ -855,7 +855,7 @@ const questionBanks = {
                     "My friend, is coming to dinner."
                 ],
                 correct: 1,
-                explanation: "If 'Sarah' identifies which friend, it's essential and needs no commas."
+                explanation: "If 'Sarah' identifies which friend (and you have multiple friends), it's essential and needs no commas."
             },
             {
                 question: "Which sentence has non-essential information?",
@@ -866,13 +866,13 @@ const questionBanks = {
                     "The book's cover is blue."
                 ],
                 correct: 1,
-                explanation: "Option 2 has extra information about when the book was bought."
+                explanation: "Option 2 has extra information about when the book was bought, set off by commas."
             },
             {
                 question: "True or False: The same information can be essential in one context and non-essential in another.",
                 options: ["True", "False"],
                 correct: 0,
-                explanation: "Whether information is essential depends on context and what's already known."
+                explanation: "True. Whether information is essential depends on context and what's already known. For example: 'My brother John' vs. 'John, my brother'."
             }
         ],
         medium: [
@@ -1425,7 +1425,7 @@ const questionBanks = {
                     "The groups of student are studying for exams."
                 ],
                 correct: 1,
-                explanation: "'Group' is the singular subject; 'of students' is a prepositional phrase."
+                explanation: "Collective nouns like 'group' are typically singular in American English. The correct version is: 'The group of students is studying for exams.'"
             },
             {
                 question: "Which is correct?",
@@ -1436,7 +1436,7 @@ const questionBanks = {
                     "Each of the book is interesting."
                 ],
                 correct: 1,
-                explanation: "'Each' is singular and takes a singular verb."
+                explanation: "'Each' is singular and takes a singular verb, regardless of what follows in the prepositional phrase."
             },
             {
                 question: "Which is correct?",
@@ -1446,8 +1446,8 @@ const questionBanks = {
                     "The team play well together.",
                     "The players play well together."
                 ],
-                correct: 2,
-                explanation: "'Team' is singular and requires 'plays', not 'play'."
+                correct: 0,
+                explanation: "'Team' is singular in American English and requires 'plays', not 'play'."
             },
             {
                 question: "Which is correct?",
@@ -1458,7 +1458,7 @@ const questionBanks = {
                     "Neither the teachers nor the student was ready."
                 ],
                 correct: 1,
-                explanation: "With 'neither...nor', the verb agrees with the closer subject."
+                explanation: "With 'neither...nor', the verb agrees with the closer subject ('students' in this case)."
             },
             {
                 question: "Which is correct?",
@@ -2009,55 +2009,55 @@ const questionBanks = {
 15: {
     easy: [
         {
-            question: "Which sentence shows correct tense consistency?",
-            options: [
-                "She walked to the store and buys groceries.",
-                "She walks to the store and bought groceries.",
-                "She walked to the store and bought groceries.",
-                "She will walk to the store and bought groceries."
-            ],
-            correct: 2,
-            explanation: "Both verbs should be in the past tense for consistency."
-        },
-        {
-            question: "Which tense shows an action completed before another past action?",
-            options: [
-                "Present perfect",
-                "Past perfect",
-                "Future perfect",
-                "Simple past"
-            ],
-            correct: 1,
-            explanation: "Past perfect ('had done') shows an action completed before another past action."
-        },
-        {
-            question: "Which is correct?",
-            options: [
-                "I seen that movie yesterday.",
-                "I saw that movie yesterday.",
-                "I have seen that movie yesterday.",
-                "I had seen that movie yesterday."
-            ],
-            correct: 1,
-            explanation: "Use simple past for completed past actions with specific time references."
-        },
-        {
-            question: "Complete: 'By the time we arrived, the movie ___.'",
-            options: ["started", "had started", "has started", "was starting"],
-            correct: 1,
-            explanation: "Use past perfect for the action that happened first."
-        },
-        {
-            question: "Which is correct in reported speech?",
-            options: [
-                "She said she will come tomorrow.",
-                "She said she would come tomorrow.",
-                "She says she will come tomorrow.",
-                "Both B and C"
-            ],
-            correct: 3,
-            explanation: "When the main verb is past tense, use 'would' instead of 'will.'"
-        }
+                question: "Which is correct in reported speech?",
+                options: [
+                    "She said she will come tomorrow.",
+                    "She said she would come tomorrow.",
+                    "She says she will come tomorrow.",
+                    "Both B and C"
+                ],
+                correct: 3,
+                explanation: "Both B and C can be correct. Backshifting ('will' → 'would') is required when the reporting verb is in the past tense and the statement is no longer true or relevant. If the statement remains true, present tense can be maintained."
+            },
+            {
+                question: "Which tense shows an action completed before another past action?",
+                options: [
+                    "Present perfect",
+                    "Past perfect",
+                    "Future perfect",
+                    "Simple past"
+                ],
+                correct: 1,
+                explanation: "Past perfect ('had done') shows an action completed before another past action."
+            },
+            {
+                question: "Which is correct?",
+                options: [
+                    "I seen that movie yesterday.",
+                    "I saw that movie yesterday.",
+                    "I have seen that movie yesterday.",
+                    "I had seen that movie yesterday."
+                ],
+                correct: 1,
+                explanation: "Use simple past for completed past actions with specific time references."
+            },
+            {
+                question: "Complete: 'By the time we arrived, the movie ___.'",
+                options: ["started", "had started", "has started", "was starting"],
+                correct: 1,
+                explanation: "Use past perfect for the action that happened first ('had started' before 'arrived')."
+            },
+            {
+                question: "Which is correct in reported speech?",
+                options: [
+                    "She said she will come tomorrow.",
+                    "She said she would come tomorrow.",
+                    "She says she will come tomorrow.",
+                    "Both B and C"
+                ],
+                correct: 3,
+                explanation: "When the main verb is past tense ('said'), we typically backshift ('will' → 'would'). However, if the situation is still true or relevant, present tense can be maintained."
+            }
     ],
     medium: [
         {
