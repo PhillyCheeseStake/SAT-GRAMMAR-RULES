@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://phillycheesestake.github.io/sitemap.xml
